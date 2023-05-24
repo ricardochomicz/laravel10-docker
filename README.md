@@ -4,23 +4,10 @@
 ### Passo a passo
 Clone Repositório
 ```sh
-git clone https://github.com/ricardochomicz/setup-docker-laravel.git
-```
+git clone https://github.com/ricardochomicz/laravel10-docker.git laravel-docker
 
-Clone os Arquivos do Laravel
-```sh
-git clone https://github.com/laravel/laravel.git "app-laravel"
+cd laravel-docker/
 ```
-
-
-Copie os arquivos docker-compose.yml, Dockerfile e o diretório docker/ para o seu projeto
-```sh
-cp -rf setup-docker-laravel/* app-laravel/
-```
-```sh
-cd app-laravel/
-```
-
 
 Crie o Arquivo .env
 ```sh
@@ -36,7 +23,7 @@ APP_URL=http://localhost:8989
 DB_CONNECTION=mysql
 DB_HOST=db
 DB_PORT=3306
-DB_DATABASE=laravel
+DB_DATABASE=nome_banco
 DB_USERNAME=root
 DB_PASSWORD=root
 
